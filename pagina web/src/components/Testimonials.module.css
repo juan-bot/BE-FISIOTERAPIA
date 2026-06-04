@@ -1,0 +1,84 @@
+.section {
+  background-color: var(--color-blanco);
+  padding: clamp(3rem, 8vw, 6rem) 0;
+}
+
+.card {
+  background: var(--color-crema);
+  padding: 2rem;
+  height: 100%;
+  position: relative;
+  border-bottom: 3px solid var(--color-verde);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(61,46,36,0.1);
+}
+
+.quoteIcon {
+  font-size: 2.5rem;
+  color: var(--color-terracota);
+  opacity: 0.25;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+}
+
+.stars {
+  color: var(--color-terracota);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.2rem;
+}
+
+.text {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--color-taupe-dark);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-verde);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.name {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-taupe-dark);
+  margin: 0;
+}
+
+.tag {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--color-taupe);
+  margin: 0;
+  text-transform: uppercase;
+}

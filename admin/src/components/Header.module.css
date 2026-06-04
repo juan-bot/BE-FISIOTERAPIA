@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.9rem 1.5rem;
+  background: var(--color-blanco);
+  border-bottom: 1px solid var(--color-crema-dark);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--color-taupe-dark);
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+  .hamburger { display: block; }
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-taupe-dark);
+  margin: 0;
+}
+
+.sub {
+  font-size: 0.68rem;
+  color: var(--color-taupe);
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.date {
+  font-size: 0.73rem;
+  color: var(--color-taupe);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+/* Ocultar texto del botón en pantallas muy pequeñas */
+@media (max-width: 400px) {
+  .date { display: none; }
+  .btnLabel { display: none; }
+}

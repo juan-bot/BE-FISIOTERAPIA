@@ -1,0 +1,77 @@
+.section {
+  background-color: var(--color-blanco);
+  padding: clamp(3rem, 8vw, 6rem) 0;
+}
+
+.card {
+  background: var(--color-blanco);
+  border: 1px solid var(--color-crema-dark);
+  padding: 2rem;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.card--verde::before   { background: var(--color-verde); }
+.card--terracota::before { background: var(--color-terracota); }
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(61, 46, 36, 0.1);
+  border-color: transparent;
+}
+
+.card:hover::before { height: 100%; }
+
+.iconBox {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.icon--verde     { background: rgba(122, 158, 135, 0.15); color: var(--color-verde); }
+.icon--terracota { background: rgba(196, 120, 77, 0.15);  color: var(--color-terracota); }
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--color-taupe-dark);
+  margin-bottom: 0.75rem;
+}
+
+.cardDesc {
+  font-size: 0.92rem;
+  color: var(--color-taupe);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.cardLink {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-verde);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cardLink:hover { color: var(--color-verde-dark); }

@@ -1,0 +1,78 @@
+.section {
+  background-color: var(--color-crema);
+  padding: clamp(3rem, 8vw, 6rem) 0;
+}
+
+.imageArea {
+  position: relative;
+  width: 380px;
+  max-width: 100%;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(160deg, var(--color-crema-dark), rgba(122,158,135,0.3));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Cuando tengas foto real, reemplaza el contenido de .imagePlaceholder con:
+  background-image: url('/src/assets/beatriz.jpg');
+  background-size: cover;
+  background-position: center top;
+*/
+
+.accentBox {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 70%;
+  height: 70%;
+  border: 2px solid var(--color-terracota);
+  opacity: 0.35;
+  z-index: 1;
+}
+
+.body {
+  font-size: 1rem;
+  color: var(--color-taupe);
+  line-height: 1.85;
+  margin-bottom: 1rem;
+}
+
+.body strong {
+  color: var(--color-verde-dark);
+  font-weight: 700;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  background: var(--color-blanco);
+  border-top: 3px solid var(--color-verde);
+}
+
+.statNum {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-terracota);
+  line-height: 1;
+}
+
+.statLabel {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-taupe);
+  line-height: 1.3;
+}
