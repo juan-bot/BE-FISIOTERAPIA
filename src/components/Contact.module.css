@@ -57,9 +57,19 @@
 /* ---- Formulario ---- */
 .form {
   background: var(--color-blanco);
-  padding: clamp(1.5rem, 5vw, 2.5rem);
-  box-shadow: 0 4px 30px rgba(61,46,36,0.07);
+  padding: 1.75rem 0 0;
+  border-top: 1px solid var(--color-crema-dark);
+  margin-top: 1.75rem;
 }
+
+.bookingCard { background: var(--color-blanco); padding: clamp(1.35rem, 4vw, 2.5rem); box-shadow: 0 4px 30px rgba(61,46,36,0.07); }
+.notice { display: flex; align-items: flex-start; gap: 0.7rem; padding: 1rem; background: rgba(122, 158, 135, 0.12); color: var(--color-taupe-dark); font-size: 0.88rem; line-height: 1.55; margin-bottom: 1.75rem; }
+.notice i { color: var(--color-verde-dark); margin-top: 0.18rem; }.notice p { margin: 0; }
+.calendarHeader { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }.calendarHeader h3 { font-size: clamp(1.6rem, 4vw, 2rem); margin: 0; }.calendarEyebrow { color: var(--color-verde-dark); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; margin: 0 0 0.25rem; text-transform: uppercase; }
+.monthActions { display: flex; gap: 0.5rem; }.monthActions button { align-items: center; background: var(--color-crema); border: 0; color: var(--color-taupe-dark); display: flex; height: 2.4rem; justify-content: center; transition: background 0.2s ease; width: 2.4rem; }.monthActions button:hover:not(:disabled) { background: var(--color-crema-dark); }.monthActions button:disabled { cursor: not-allowed; opacity: 0.42; }
+.weekdays, .calendarGrid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0.35rem; }.weekdays { color: var(--color-taupe); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 0.35rem; text-align: center; text-transform: uppercase; }.day, .emptyDay { aspect-ratio: 1 / 0.92; min-height: 3.2rem; }.day { background: transparent; border: 1px solid transparent; color: var(--color-taupe); display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: var(--font-body); font-size: 0.9rem; gap: 0.08rem; }.day:disabled { cursor: default; opacity: 0.45; }.dayAvailable { background: var(--color-crema); border-color: var(--color-crema-dark); color: var(--color-taupe-dark); cursor: pointer; }.dayAvailable:hover { border-color: var(--color-verde); }.daySelected { background: var(--color-verde); border-color: var(--color-verde); color: #fff; }.day small { font-size: 0.56rem; line-height: 1.1; }
+.calendarStatus { color: var(--color-taupe); font-size: 0.88rem; margin: 1rem 0 0; text-align: center; }.calendarStatus i { display: inline-block; margin-right: 0.35rem; }.slotPanel { border-top: 1px solid var(--color-crema-dark); margin-top: 1.4rem; padding-top: 1.25rem; }.slotTitle { color: var(--color-taupe-dark); font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 0.85rem; text-transform: capitalize; }.slotList { display: flex; flex-wrap: wrap; gap: 0.6rem; }.slot { background: var(--color-crema); border: 1px solid var(--color-crema-dark); color: var(--color-taupe-dark); font-family: var(--font-body); font-size: 0.85rem; padding: 0.55rem 0.75rem; }.slot:hover { border-color: var(--color-verde); }.slotSelected { background: var(--color-verde); border-color: var(--color-verde); color: #fff; }.error { background: #fff1ed; color: #9a3d26; font-size: 0.88rem; margin: 1rem 0 0; padding: 0.7rem 0.85rem; }
+@media (max-width: 420px) { .bookingCard { padding: 1rem; }.weekdays, .calendarGrid { gap: 0.18rem; }.day { font-size: 0.78rem; }.day small { display: none; } }
 
 .label {
   display: block;
