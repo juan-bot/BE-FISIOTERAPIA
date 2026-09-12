@@ -1,18 +1,18 @@
-# BE-FISIOTERAPIA
+# BE Fisioterapia
 
-Sistema web para una clínica de fisioterapia: página pública, panel de administración y backend.
+Sitio web público de BE Fisioterapia, desarrollado con React y Vite.
 
-## Estructura
+## Ejecutar localmente
 
-- `admin/` — Panel de administración (Vite + JavaScript)
-- `pagina web/` — Sitio público de la clínica
-- `.github/` — Flujos de trabajo de CI/CD
+```bash
+npm install
+npm run dev
+```
 
-## Stack
+## Generar producción
 
-- JavaScript (Node.js / Vite)
-- HTML + CSS
+```bash
+npm run build
+```
 
-## Estado
-
-En desarrollo. Proyecto de portafolio.
+El sitio se despliega automáticamente en GitHub Pages al enviar cambios a `main`.
